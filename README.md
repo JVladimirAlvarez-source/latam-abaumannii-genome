@@ -38,22 +38,6 @@ El script está optimizado para recuperar aislados de países de la región, tal
 * Bolivia
 ---
 
-## Requisitos Previos
-
-Antes de ejecutar el script, asegúrate de contar con los siguientes componentes instalados en tu sistema Unix/Linux:
-
-* `bash` (v4.0 o superior)
-* `curl` / `wget`
-* `ncbi-datasets-cli` (Herramienta de línea de comandos de NCBI)
-
----
-
-##  Instalación y Uso
-
-1. **Clonar el repositorio:**
-   ```bash
-   git clone [https://github.com/JVladimirAlvarez-source/latam-abaumannii-genome.git](https://github.com/JVladimirAlvarez-source/latam-abaumannii-genome.git)
-   cd latam-abaumannii-genome
 
 ##  Cobertura de Datos
 
@@ -71,35 +55,25 @@ El script descarga y consolida conjuntos genómicos reportados para los siguient
 ---
 
 
-### Instalación rápida de NCBI Datasets CLI
+## Requisitos Previos
 
+Antes de ejecutar el script, asegúrate de contar con los siguientes componentes en tu sistema Unix/Linux:
 
+* `bash` (v4.0 o superior)
+* `curl` / `wget`
+* `ncbi-datasets-cli` (Herramienta de línea de comandos de NCBI)
+
+### Instalación rápida de NCBI Datasets CLI:
 
 ```bash
+# Descargar binario
+curl -o datasets [https://ftp.ncbi.nlm.nih.gov/pub/datasets/command-line/v2/linux-amd64/datasets](https://ftp.ncbi.nlm.nih.gov/pub/datasets/command-line/v2/linux-amd64/datasets)
 
-\# Descargar binario
-
-curl -o datasets \[https://ftp.ncbi.nlm.nih.gov/pub/datasets/command-line/v2/linux-amd64/datasets](https://ftp.ncbi.nlm.nih.gov/pub/datasets/command-line/v2/linux-amd64/datasets)
-
-
-
-\# Otorgar permisos de ejecución
-
+# Otorgar permisos de ejecución
 chmod +x datasets
 
-
-
-\# Mover al PATH del sistema
-
+# Mover al PATH del sistema
 sudo mv datasets /usr/local/bin/
-
-
-
-```
-
-
-
-\---
 
 
 ## Instalación
@@ -140,89 +114,76 @@ chmod +x download\_aba\_genomes.sh
 
 
 
-## Uso
+```
 
+---
 
+## 🚀 Instalación y Uso
 
-Ejecuta el script directamente desde la terminal:
-
-
-
+1. **Clonar el repositorio:**
 ```bash
+git clone [https://github.com/JVladimirAlvarez-source/latam-abaumannii-genome.git](https://github.com/JVladimirAlvarez-source/latam-abaumannii-genome.git)
+cd latam-abaumannii-genome
 
-./download\_aba\_genomes.sh
+```
 
 
+2. **Otorgar permisos de ejecución:**
+```bash
+chmod +x download_aba_genomes.sh
+
+```
+
+
+3. **Ejecutar el script:**
+```bash
+./download_aba_genomes.sh
 
 ```
 
 
 
-\---
+---
 
-
-
-##  Estructura del Proyecto
-
-
+## 📂 Estructura del Proyecto
 
 Tras completar la descarga, se generará la siguiente estructura de directorios:
 
-
-
 ```text
-
-latam-abaumannii-genomes/
-
-├── download\_aba\_genomes.sh            # Script ejecutable principal
-
-├── download\_aba\_genomes\_YYYYMMDD.log  # Archivo de log generado
-
+latam-abaumannii-genome/
+├── download_aba_genomes.sh            # Script ejecutable principal
+├── download_aba_genomes_YYYYMMDD.log  # Archivo de log generado
 └── genomes/                           # Carpeta contenedora de genomas
-
-&#x20;   ├── argentina/                     # Genomas de Argentina (FASTA)
-
-&#x20;   ├── brazil/                        # Genomas de Brasil (FASTA)
-
-&#x20;   ├── chile/                         # Genomas de Chile (FASTA)
-
-&#x20;   ├── paraguay/                      # Genomas de Paraguay (FASTA)
-
-&#x20;   ├── peru/                          # Genomas de Perú (FASTA)
-
-&#x20;   └── bolivia\_55.fasta.gz            # Archivo WGS comprimido de Bolivia
-
-
+    ├── argentina/                     # Genomas de Argentina (FASTA)
+    ├── brazil/                        # Genomas de Brasil (FASTA)
+    ├── chile/                         # Genomas de Chile (FASTA)
+    ├── paraguay/                      # Genomas de Paraguay (FASTA)
+    ├── peru/                          # Genomas de Perú (FASTA)
+    └── bolivia_55.fasta.gz            # Archivo WGS comprimido de Bolivia
 
 ```
 
-
-
-\---
-
-
+---
 
 ## 📝 Manejo de Registros (Logs)
 
-
-
 El script cuenta con un sistema de registro de eventos con códigos de color en la consola que simultáneamente guarda una copia en disco:
 
+* **`[INFO]`**: Indica progreso normal y estado exitoso.
+* **`[WARN]`**: Advierte sobre elementos no encontrados o advertencias menores.
+* **`[ERROR]`**: Reporta fallos en descargas o peticiones de red.
 
-
-\* \*\*`\[INFO]`\*\* Indica progreso normal y estado exitoso.
-
-\* \*\*`\[WARN]`\*\* Advertencias o eventos no críticos.
-
-\* \*\*`\[ERROR]`\*\* Fallos de dependencias o problemas durante la descarga de un BioProject.
-
-
-
-\---
-
-
+---
 
 ##  Licencia
+
+Este proyecto está bajo la Licencia **MIT**. Consulta el archivo `LICENSE` para obtener más detalles.
+
+```
+
+---
+
+```
 
 
 
