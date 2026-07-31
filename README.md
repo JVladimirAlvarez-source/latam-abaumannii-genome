@@ -55,33 +55,23 @@ Antes de ejecutar el script, asegúrate de contar con los siguientes componentes
    git clone [https://github.com/JVladimirAlvarez-source/latam-abaumannii-genome.git](https://github.com/JVladimirAlvarez-source/latam-abaumannii-genome.git)
    cd latam-abaumannii-genome
 
-\##  Cobertura de Datos
+##  Cobertura de Datos
 
-El script descarga conjuntos genómicos reportados de los siguientes países:
-
+El script descarga y consolida conjuntos genómicos reportados para los siguientes países de América Latina:
 
 | País | Fuente / Repositorio | Identificador | Cantidad Aprox. |
+| :--- | :--- | :--- | :---: |
+| 🇦🇷 **Argentina** | NCBI GenBank (WGS) | `NXGW00000000.1`, `PGTR00000000.1`, `NTFR00000000.1` | 3 cepas |
+| 🇧🇴 **Bolivia** | ENA | `QXPJ01000000` | 55 cepas |
+| 🇧🇷 **Brasil** | NCBI BioProject | [PRJNA613847](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA613847) | 89 cepas |
+| 🇵🇾 **Paraguay** | NCBI BioProject | [PRJNA1012735](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1012735) | 43 cepas |
+| 🇵🇪 **Perú** | NCBI BioProject | [PRJNA1339005](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1339005) | 19 cepas |
+| 🇨🇱 **Chile** | NCBI BioProject | [PRJNA731249](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA731249) | 34 cepas |
 
-| :--- | :--- | :--- | :--- |
-
-| 🇦🇷 \*\*Argentina\*\* | NCBI GenBank (WGS) | `NXGW00000000.1`, `PGTR00000000.1`, `NTFR00000000.1` | 3 cepas |
-
-| 🇧🇴 \*\*Bolivia\*\* | ENA | `QXPJ01000000` | 55 cepas |
-
-| 🇧🇷 \*\*Brasil\*\* | NCBI BioProject | `PRJNA613847` | \89 cepas |
-
-| 🇵🇾 \*\*Paraguay\*\* | NCBI BioProject | `PRJNA1012735` | \43 cepas |
-
-| 🇵🇪 \*\*Perú\*\* | NCBI BioProject | `PRJNA1339005` | \19 cepas |
-
-| 🇨🇱 \*\*Chile\*\* | NCBI BioProject | `PRJNA731249` | \34 cepas |
+---
 
 
-
-\---
-
-
-\### Instalación rápida de NCBI Datasets CLI
+### Instalación rápida de NCBI Datasets CLI
 
 
 
@@ -112,8 +102,7 @@ sudo mv datasets /usr/local/bin/
 \---
 
 
-
-\## Instalación
+## Instalación
 
 
 
@@ -151,7 +140,7 @@ chmod +x download\_aba\_genomes.sh
 
 
 
-\## Uso
+## Uso
 
 
 
@@ -173,7 +162,7 @@ Ejecuta el script directamente desde la terminal:
 
 
 
-\##  Estructura del Proyecto
+##  Estructura del Proyecto
 
 
 
@@ -213,7 +202,7 @@ latam-abaumannii-genomes/
 
 
 
-\## 📝 Manejo de Registros (Logs)
+## 📝 Manejo de Registros (Logs)
 
 
 
@@ -233,7 +222,7 @@ El script cuenta con un sistema de registro de eventos con códigos de color en 
 
 
 
-\## 📄 Licencia
+##  Licencia
 
 
 
