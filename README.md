@@ -14,9 +14,9 @@ Script automatizado para la descarga masiva de genomas ensamblados de ***Acineto
 - [Cobertura de Datos](#-cobertura-de-datos)
 - [Requisitos Previos](#-requisitos-previos)
 - [Instalación y Uso](#-instalación-y-uso)
-- [Estructura del Repositorio](#-estructura-del-repositorio)
+- [Estructura del Proyecto](#-estructura-del-proyecto)
+- [Manejo de Registros (Logs)](#-manejo-de-registros-logs)
 - [Licencia](#-licencia)
-
 ---
 
 ##  Características
@@ -107,9 +107,6 @@ chmod +x download_aba_genomes.sh
 
 
 
-```
-
-```
 ##  Estructura del Proyecto
 
 Tras completar la descarga, se generará la siguiente estructura de directorios:
@@ -144,11 +141,7 @@ El script cuenta con un sistema de registro de eventos con códigos de color en 
 
 Este proyecto está bajo la Licencia **MIT**. Consulta el archivo `LICENSE` para obtener más detalles.
 
-```
 
----
-
-```
 
 
 
