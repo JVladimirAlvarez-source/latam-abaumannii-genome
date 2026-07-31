@@ -25,19 +25,6 @@ Script automatizado para la descarga masiva de genomas ensamblados de ***Acineto
 *  **Enfoque Regional:** Filtrado específico para aislamientos geográficos de América Latina, recuperando genomas con perfiles de resistencia a antibióticos.
 * **Organización Estandarizada:** Estructura de carpetas optimizada para análisis bioinformáticos posteriores.
 
----
-
-##  Cobertura de Datos
-
-El script está optimizado para recuperar aislados de países de la región, tales como:
-* Argentina
-* Brasil
-* Chile
-* Paraguay
-* Perú
-* Bolivia
----
-
 
 ##  Cobertura de Datos
 
@@ -64,9 +51,6 @@ Antes de ejecutar el script, asegúrate de contar con los siguientes componentes
 
 ### Instalación rápida de NCBI Datasets CLI
 ---
-
-```markdown
-
 
 ```bash
 # Descargar binario
@@ -141,9 +125,4 @@ El script cuenta con un sistema de registro de eventos con códigos de color en 
 
 Este proyecto está bajo la Licencia **MIT**. Consulta el archivo `LICENSE` para obtener más detalles.
 
-
-
-
-
-Este proyecto está bajo la Licencia MIT. Consulta el archivo \[LICENSE](https://www.google.com/search?q=LICENSE) para más detalles.
 
