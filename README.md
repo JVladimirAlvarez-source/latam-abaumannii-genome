@@ -1,73 +1,63 @@
-&#x20;LATAM \*Acinetobacter baumannii\* Genome Downloader
+# LATAM *Acinetobacter baumannii* Genome Downloader
 
+![Bash Shell](https://img.shields.io/badge/Shell-Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white)
+![NCBI Datasets](https://img.shields.io/badge/NCBI-Datasets-2B16%2B2B-blue?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)
 
+Script automatizado para la descarga masiva de genomas ensamblados de ***Acinetobacter baumannii*** provenientes de proyectos epidemiológicos y genómicos de América Latina. Diseñado para facilitar la construcción de conjuntos de datos en proyectos de genómica comparativa, epidemiología molecular y entrenamiento de modelos predictivos de resistencia a los antimicrobianos (AMR).
 
-!\[Bash Shell](https://img.shields.io/badge/Shell-Bash-4EAA25?style=for-the-badge\&logo=gnu-bash\&logoColor=white)
+---
 
-!\[NCBI Datasets](https://img.shields.io/badge/NCBI-Datasets%20v16%2B-blue?style=for-the-badge)
+##  Tabla de Contenidos
 
-!\[License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)
+- [Características](#-características)
+- [Cobertura de Datos](#-cobertura-de-datos)
+- [Requisitos Previos](#-requisitos-previos)
+- [Instalación y Uso](#-instalación-y-uso)
+- [Estructura del Repositorio](#-estructura-del-repositorio)
+- [Licencia](#-licencia)
 
+---
 
+##  Características
 
-Script automatizado para la descarga masiva de genomas ensamblados de \*Acinetobacter baumannii\* provenientes de proyectos epidemiológicos y genómicos de América Latina. Diseñado para facilitar la construcción de conjuntos de datos en proyectos de genómica comparativa, epidemiología molecular y entrenamiento de modelos predictivos.
+*  **Descarga Automática:** Interacción directa con las APIs oficiales de NCBI/BV-BRC.
+*  **Enfoque Regional:** Filtrado específico para aislamientos geográficos de América Latina, recuperando genomas con perfiles de resistencia a antibióticos.
+* 📁 **Organización Estandarizada:** Estructura de carpetas optimizada para análisis bioinformáticos posteriores.
 
+---
 
+## 🌍 Cobertura de Datos
 
-\---
+El script está optimizado para recuperar aislados de países de la región, tales como:
+* Argentina
+* Brasil
+* Chile
+* Paraguay
+* Perú
+* Bolivia
+---
 
+## Requisitos Previos
 
+Antes de ejecutar el script, asegúrate de contar con los siguientes componentes instalados en tu sistema Unix/Linux:
 
-\## 📌 Tabla de Contenidos
+* `bash` (v4.0 o superior)
+* `curl` / `wget`
+* `ncbi-datasets-cli` (Herramienta de línea de comandos de NCBI)
 
-\- \[Características](#-características)
+---
 
-\- \[Cobertura de Datos](#-cobertura-de-datos)
+##  Instalación y Uso
 
-\- \[Requisitos Previos](#-requisitos-previos)
+1. **Clonar el repositorio:**
+   ```bash
+   git clone [https://github.com/JVladimirAlvarez-source/latam-abaumannii-genome.git](https://github.com/JVladimirAlvarez-source/latam-abaumannii-genome.git)
+   cd latam-abaumannii-genome
 
-\- \[Instalación](#-instalación)
-
-\- \[Uso](#-uso)
-
-\- \[Estructura del Proyecto](#-estructura-del-proyecto)
-
-\- \[Manejo de Registros (Logs)](#-manejo-de-registros-logs)
-
-\- \[Contribución](#-contribución)
-
-\- \[Licencia](#-licencia)
-
-
-
-\---
-
-
-
-\## 🚀 Características
-
-
-
-\- \*\*Descarga multifuente:\*\* Combina accesos directamente desde el \*\*NCBI\*\* (GenBank/RefSeq) y el \*\*ENA\*\* (European Nucleotide Archive).
-
-\- \*\*Procesamiento automatizado:\*\* Realiza la descarga, validación y descompresión automática de archivos FASTA/FNA.
-
-\- \*\*Tolerancia a fallos:\*\* Continúa la ejecución global aun si un repositorio específico presenta caídas temporales de red.
-
-\- \*\*Registro completo:\*\* Genera un archivo `.log` detallado por cada ejecución para auditoría de descargas.
-
-
-
-\---
-
-
-
-\## 📊 Cobertura de Datos
-
-
+\##  Cobertura de Datos
 
 El script descarga conjuntos genómicos reportados de los siguientes países:
-
 
 
 | País | Fuente / Repositorio | Identificador | Cantidad Aprox. |
@@ -78,36 +68,17 @@ El script descarga conjuntos genómicos reportados de los siguientes países:
 
 | 🇧🇴 \*\*Bolivia\*\* | ENA | `QXPJ01000000` | 55 cepas |
 
-| 🇧🇷 \*\*Brasil\*\* | NCBI BioProject | `PRJNA613847` | \~89 cepas |
+| 🇧🇷 \*\*Brasil\*\* | NCBI BioProject | `PRJNA613847` | \89 cepas |
 
-| 🇵🇾 \*\*Paraguay\*\* | NCBI BioProject | `PRJNA1012735` | \~43 cepas |
+| 🇵🇾 \*\*Paraguay\*\* | NCBI BioProject | `PRJNA1012735` | \43 cepas |
 
-| 🇵🇪 \*\*Perú\*\* | NCBI BioProject | `PRJNA1339005` | \~19 cepas |
+| 🇵🇪 \*\*Perú\*\* | NCBI BioProject | `PRJNA1339005` | \19 cepas |
 
-| 🇨🇱 \*\*Chile\*\* | NCBI BioProject | `PRJNA731249` | \~34 cepas |
+| 🇨🇱 \*\*Chile\*\* | NCBI BioProject | `PRJNA731249` | \34 cepas |
 
 
 
 \---
-
-
-
-\## 🛠️ Requisitos Previos
-
-
-
-Asegúrate de contar con los siguientes paquetes en tu sistema Linux/macOS antes de ejecutar el script:
-
-
-
-1\. \*\*Bash\*\* (v4.0 o superior)
-
-2\. \*\*curl\*\*
-
-3\. \*\*unzip\*\*
-
-4\. \*\*NCBI Datasets CLI\*\* (v16.0 o superior)
-
 
 
 \### Instalación rápida de NCBI Datasets CLI
