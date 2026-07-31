@@ -10,13 +10,13 @@ Script automatizado para la descarga masiva de genomas ensamblados de ***Acineto
 
 ##  Tabla de Contenidos
 
-- [Características](#-características)
-- [Cobertura de Datos](#-cobertura-de-datos)
-- [Requisitos Previos](#-requisitos-previos)
-- [Instalación y Uso](#-instalación-y-uso)
-- [Estructura del Proyecto](#-estructura-del-proyecto)
-- [Manejo de Registros (Logs)](#-manejo-de-registros-logs)
-- [Licencia](#-licencia)
+- [Características](#características)
+- [Cobertura de Datos](#cobertura-de-datos)
+- [Requisitos Previos](#requisitos-previos)
+- [Instalación y Uso](#instalación-y-uso)
+- [Estructura del Proyecto](#estructura-del-proyecto)
+- [Manejo de Registros (Logs)](#manejo-de-registros-logs)
+- [Licencia](#licencia)
 ---
 
 ##  Características
