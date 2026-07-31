@@ -54,7 +54,6 @@ El script descarga y consolida conjuntos genómicos reportados para los siguient
 
 ---
 
-
 ## Requisitos Previos
 
 Antes de ejecutar el script, asegúrate de contar con los siguientes componentes en tu sistema Unix/Linux:
@@ -63,7 +62,10 @@ Antes de ejecutar el script, asegúrate de contar con los siguientes componentes
 * `curl` / `wget`
 * `ncbi-datasets-cli` (Herramienta de línea de comandos de NCBI)
 
-### Instalación rápida de NCBI Datasets CLI:
+---
+
+```markdown
+### Instalación rápida de NCBI Datasets CLI
 
 ```bash
 # Descargar binario
@@ -74,45 +76,6 @@ chmod +x datasets
 
 # Mover al PATH del sistema
 sudo mv datasets /usr/local/bin/
-
-
-## Instalación
-
-
-
-Clona este repositorio en tu máquina local:
-
-
-
-```bash
-
-git clone \[https://github.com/tu-usuario/latam-abaumannii-genomes.git](https://github.com/tu-usuario/latam-abaumannii-genomes.git)
-
-cd latam-abaumannii-genomes
-
-
-
-```
-
-
-
-Otorga permisos de ejecución al script:
-
-
-
-```bash
-
-chmod +x download\_aba\_genomes.sh
-
-
-
-```
-
-
-
-\---
-
-
 
 ```
 
@@ -143,8 +106,9 @@ chmod +x download_aba_genomes.sh
 
 
 
----
+```
 
+```
 ## 📂 Estructura del Proyecto
 
 Tras completar la descarga, se generará la siguiente estructura de directorios:
