@@ -23,11 +23,11 @@ Script automatizado para la descarga masiva de genomas ensamblados de ***Acineto
 
 *  **Descarga Automática:** Interacción directa con las APIs oficiales de NCBI/BV-BRC.
 *  **Enfoque Regional:** Filtrado específico para aislamientos geográficos de América Latina, recuperando genomas con perfiles de resistencia a antibióticos.
-* 📁 **Organización Estandarizada:** Estructura de carpetas optimizada para análisis bioinformáticos posteriores.
+* **Organización Estandarizada:** Estructura de carpetas optimizada para análisis bioinformáticos posteriores.
 
 ---
 
-## 🌍 Cobertura de Datos
+##  Cobertura de Datos
 
 El script está optimizado para recuperar aislados de países de la región, tales como:
 * Argentina
@@ -62,10 +62,11 @@ Antes de ejecutar el script, asegúrate de contar con los siguientes componentes
 * `curl` / `wget`
 * `ncbi-datasets-cli` (Herramienta de línea de comandos de NCBI)
 
+### Instalación rápida de NCBI Datasets CLI
 ---
 
 ```markdown
-### Instalación rápida de NCBI Datasets CLI
+
 
 ```bash
 # Descargar binario
@@ -81,7 +82,7 @@ sudo mv datasets /usr/local/bin/
 
 ---
 
-## 🚀 Instalación y Uso
+##  Instalación y Uso
 
 1. **Clonar el repositorio:**
 ```bash
@@ -109,7 +110,7 @@ chmod +x download_aba_genomes.sh
 ```
 
 ```
-## 📂 Estructura del Proyecto
+##  Estructura del Proyecto
 
 Tras completar la descarga, se generará la siguiente estructura de directorios:
 
@@ -129,7 +130,7 @@ latam-abaumannii-genome/
 
 ---
 
-## 📝 Manejo de Registros (Logs)
+##  Manejo de Registros (Logs)
 
 El script cuenta con un sistema de registro de eventos con códigos de color en la consola que simultáneamente guarda una copia en disco:
 
